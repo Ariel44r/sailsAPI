@@ -38,6 +38,10 @@ module.exports.routes = {
   "GET /Developers": {
     controller: "DevelopersController",
     action: "index"
+  },
+  "GET /Users": {
+    controller: "UsersController",
+    action: "index"
   }
 
   /***************************************************************************

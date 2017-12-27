@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            <%= title %>
+        </title>
+    </head>
+    <body>
+        <div>
+            <%= name %>
+            <%= age %>
+            <%= profession %>
+            <div>
+                <% _.each(users, function (user){ %>
+                    <p><%=user.username%></p>
+                    <p><%= user.id%></p>
+                    <p><%= user.age%></p>
+                    <p><%=user.team%></p>                    
+                    <p><%=user.email%></p>
+                    <p><%= user.createdAt%></p>
+                    <p><%= user.updatedAt%></p>
+                    <p> ######## ==></p>
+                <% }) %>
+            </div>
+        </div>
+    </body>
+</html>
